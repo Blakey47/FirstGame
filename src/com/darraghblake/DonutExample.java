@@ -3,9 +3,9 @@ package com.darraghblake;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
-public class Application extends JFrame {
+public class DonutExample extends JFrame {
 
-    public Application() {
+    public DonutExample() {
 
         initUI();
     }
@@ -14,9 +14,9 @@ public class Application extends JFrame {
 
         add(new Board());
 
-        setSize(250, 200);
+        setSize(330, 330);
 
-        setTitle("Application");
+        setTitle("Donut");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
@@ -24,7 +24,7 @@ public class Application extends JFrame {
     public static void main(String[] args) {
 
         EventQueue.invokeLater(() -> {
-            Application ex = new Application();
+            DonutExample ex = new DonutExample();
             ex.setVisible(true);
         });
 
